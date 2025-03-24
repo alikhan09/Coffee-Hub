@@ -1,39 +1,40 @@
 import React from "react";
 import { motion } from "framer-motion";
+import images from "../utils/importimages";
 
 const Menu = ({ category, goBack, addToCart, removeFromCart, cart }) => {
   const items = {
     Coffee: [
-      { id: 1, name: "Espresso", price: 250, quantity: 0, image: "/Coffee-Hub/assets/espresso.jpeg" },
-      { id: 2, name: "Latte", price: 300, quantity: 0, image: "/Coffee-Hub/assets/latte.jpg" },
-      { id: 3, name: "Cappuccino", price: 300, quantity: 0, image: "/Coffee-Hub/assets/cappuccino.jpeg" },
-      { id: 4, name: "Ice Mocha", price: 250, quantity: 0, image: "/Coffee-Hub/assets/icemocha.jpg" },
-      { id: 5, name: "Double Chocolate Mocha", price: 300, quantity: 0, image: "/Coffee-Hub/assets/doublechocolate.jpg" },
-      { id: 6, name: "Black Coffee", price: 300, quantity: 0, image: "/Coffee-Hub/assets/blackcoffee.jpg" },
+      { id: 1, name: "Espresso", price: 250, quantity: 0, image: images.espresso },
+      { id: 2, name: "Latte", price: 300, quantity: 0, image: images.latte },
+      { id: 3, name: "Cappuccino", price: 300, quantity: 0, image: images.cappuccino },
+      { id: 4, name: "Ice Mocha", price: 250, quantity: 0, image: images.icemocha },
+      { id: 5, name: "Double Chocolate Mocha", price: 300, quantity: 0, image: images.doublechocolate },
+      { id: 6, name: "Black Coffee", price: 300, quantity: 0, image: images.blackcoffee },
     ],
     Burgers: [
-      { id: 7, name: "Cheese Burger", price: 400, quantity: 0, image: "/Coffee-Hub/assets/cheeseburger.jpg" },
-      { id: 8, name: "Chicken Burger", price: 350, quantity: 0, image: "/Coffee-Hub/assets/chickenburger.jpg" },
-      { id: 9, name: "Beef Burger", price: 450, quantity: 0, image: "/Coffee-Hub/assets/beefburger.jpg" },
-      { id: 10, name: "Zinger Burger", price: 500, quantity: 0, image: "/Coffee-Hub/assets/zingerburger.jpeg" },
-      { id: 11, name: "Double Patty Burger", price: 600, quantity: 0, image: "/Coffee-Hub/assets/doublepattyburger.jpg" },
-      { id: 12, name: "Veggie Burger", price: 300, quantity: 0, image: "/Coffee-Hub/assets/veggieburger.jpeg" },
+      { id: 7, name: "Cheese Burger", price: 400, quantity: 0, image: images.cheeseburger },
+      { id: 8, name: "Chicken Burger", price: 350, quantity: 0, image: images.chickenburger },
+      { id: 9, name: "Beef Burger", price: 450, quantity: 0, image: images.beefburger },
+      { id: 10, name: "Zinger Burger", price: 500, quantity: 0, image: images.zingerburger },
+      { id: 11, name: "Double Patty Burger", price: 600, quantity: 0, image: images.doublepattyburger },
+      { id: 12, name: "Veggie Burger", price: 300, quantity: 0, image: images.veggieburger },
     ],
     Pizza: [
-      { id: 13, name: "Pepperoni Pizza", price: 700, quantity: 0, image: "/Coffee-Hub/assets/pepperonipizza.jpeg" },
-      { id: 14, name: "Margherita Pizza", price: 650, quantity: 0, image: "/Coffee-Hub/assets/margherita.jpg" },
-      { id: 15, name: "BBQ Chicken Pizza", price: 750, quantity: 0, image: "/Coffee-Hub/assets/bbqchicken.jpg" },
-      { id: 16, name: "Tandoori Pizza", price: 720, quantity: 0, image: "/Coffee-Hub/assets/tandooripizza.jpg" },
-      { id: 17, name: "Four Cheese Pizza", price: 800, quantity: 0, image: "/Coffee-Hub/assets/fourcheese.jpeg" },
-      { id: 18, name: "Mushroom Pizza", price: 680, quantity: 0, image: "/Coffee-Hub/assets/mushroompizza.jpg" },
+      { id: 13, name: "Pepperoni Pizza", price: 700, quantity: 0, image: images.pepperonipizza },
+      { id: 14, name: "Margherita Pizza", price: 650, quantity: 0, image: images.margherita },
+      { id: 15, name: "BBQ Chicken Pizza", price: 750, quantity: 0, image: images.bbqchicken },
+      { id: 16, name: "Tandoori Pizza", price: 720, quantity: 0, image: images.tandooripizza },
+      { id: 17, name: "Four Cheese Pizza", price: 800, quantity: 0, image: images.fourcheese },
+      { id: 18, name: "Mushroom Pizza", price: 680, quantity: 0, image: images.mushroompizza },
     ],
     DesiFood: [
-      { id: 19, name: "Biryani", price: 500, quantity: 0, image: "/Coffee-Hub/assets/biryani.jpeg" },
-      { id: 20, name: "Chicken Karahi", price: 900, quantity: 0, image: "/Coffee-Hub/assets/karahi.jpeg" },
-      { id: 21, name: "Daal Chawal", price: 300, quantity: 0, image: "/Coffee-Hub/assets/daalchawal.jpg" },
-      { id: 22, name: "Nihari", price: 850, quantity: 0, image: "/Coffee-Hub/assets/nihari.jpeg" },
-      { id: 23, name: "Haleem", price: 600, quantity: 0, image: "/Coffee-Hub/assets/haleem.jpeg" },
-      { id: 24, name: "Paya", price: 700, quantity: 0, image: "/Coffee-Hub/assets/paya.jpeg" },
+      { id: 19, name: "Biryani", price: 500, quantity: 0, image: images.biryani },
+      { id: 20, name: "Chicken Karahi", price: 900, quantity: 0, image: images.karahi },
+      { id: 21, name: "Daal Chawal", price: 300, quantity: 0, image: images.daalchawal },
+      { id: 22, name: "Nihari", price: 850, quantity: 0, image: images.nihari },
+      { id: 23, name: "Haleem", price: 600, quantity: 0, image: images.haleem },
+      { id: 24, name: "Paya", price: 700, quantity: 0, image: images.paya },
     ],
   };
 

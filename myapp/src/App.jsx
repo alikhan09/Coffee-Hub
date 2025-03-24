@@ -60,19 +60,36 @@ const App = () => {
 
       {/* Page Routing */}
       <div className="mt-16 p-6 flex-grow">
-        {page === "home" && !selectedCategory && <Home selectCategory={setSelectedCategory} />}
-        {selectedCategory && (
-          <Menu
-            category={selectedCategory}
-            goBack={() => setSelectedCategory(null)}
-            addToCart={addToCart}
-            removeFromCart={removeFromCart}
-            cart={cart}
-          />
-        )}
-        {page === "about" && <About />}
-        {page === "contact" && <Contact />}
-      </div>
+  {/* Show Home Page */}
+  {page === "home" && !selectedCategory && <Home selectCategory={setSelectedCategory} />}
+
+  {/* Show Menu when a category is selected */}
+  {page === "home" && selectedCategory && (
+    <Menu
+      category={selectedCategory}
+      goBack={() => setSelectedCategory(null)}
+      addToCart={addToCart}
+      removeFromCart={removeFromCart}
+      cart={cart}
+    />
+  )}
+
+  {/* About Page: Reset selectedCategory first */}
+  {page === "about" && (
+    <>
+      {selectedCategory && setSelectedCategory(null)}
+      <About />
+    </>
+  )}
+
+  {/* Contact Page: Reset selectedCategory first */}
+  {page === "contact" && (
+    <>
+      {selectedCategory && setSelectedCategory(null)}
+      <Contact />
+    </>
+  )}
+</div>
 
       {/* Cart Component (Always Visible) */}
       {cart.length > 0 && <Cart cart={cart} clearCart={clearCart} />}

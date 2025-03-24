@@ -1,9 +1,10 @@
 import React from "react";
+import images from "../utils/importimages";
 
 const About = () => {
   return (
     <div className="relative bg-cover bg-center min-h-screen flex flex-col justify-center items-center text-white px-6"
-      style={{ backgroundImage: "url('/assets/latte.jpg')" }}>
+      style={{ backgroundImage:  images.latte}}>
       
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black opacity-50"></div>

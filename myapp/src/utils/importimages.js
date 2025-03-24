@@ -22,7 +22,6 @@ import daalchawal from "../assets/daalchawal.jpg";
 import nihari from "../assets/nihari.jpeg";
 import haleem from "../assets/haleem.jpeg";
 import paya from "../assets/paya.jpeg";
-import logo from "../assets/rex.png";
 
 const images = {
   espresso,
@@ -49,7 +48,6 @@ const images = {
   nihari,
   haleem,
   paya,
-  logo,
 };
 
 export default images;

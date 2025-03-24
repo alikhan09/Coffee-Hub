@@ -22,8 +22,10 @@ import daalchawal from "../assets/daalchawal.jpg";
 import nihari from "../assets/nihari.jpeg";
 import haleem from "../assets/haleem.jpeg";
 import paya from "../assets/paya.jpeg";
+import Coffee from "../assets/Coffee.jpg";
 
 const images = {
+    Coffee,
   espresso,
   latte,
   cappuccino,

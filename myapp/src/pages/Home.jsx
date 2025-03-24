@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import images from "../utils/importimages";
 
 const categories = [
-  { name: "Coffee", image: "/assets/Coffee.jpg" },
-  { name: "Burgers", image: "/assets/zingerburger.jpeg" },
-  { name: "Pizza", image: "/assets/mushroompizza.jpg" },
-  { name: "DesiFood", image: "/assets/karahi.jpeg" },
+  { name: "Coffee", image: images.Coffee },
+  { name: "Burgers", image: images.zingerburger },
+  { name: "Pizza", image: images.mushroompizza },
+  { name: "DesiFood", image: images.karahi },
 ];
 
 const Home = ({ selectCategory }) => {

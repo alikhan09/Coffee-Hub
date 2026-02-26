@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
+import Report from "./pages/Report";
 
 const App = () => {
   const [page, setPage] = useState("home");
@@ -79,6 +80,12 @@ const App = () => {
     <>
       {selectedCategory && setSelectedCategory(null)}
       <About />
+    </>
+  )}
+   {page === "report" && (
+    <>
+      {selectedCategory && setSelectedCategory(null)}
+      <Report />
     </>
   )}
 

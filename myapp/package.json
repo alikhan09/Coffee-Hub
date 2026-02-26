@@ -41,6 +41,18 @@
   "framer-motion": "^12.4.10",
   
     
+  "highcharts": "^12.4.0",
+  
+    
+  "highcharts-react-official": "^3.2.2",
+  
+    
+  "jspdf": "^3.0.3",
+  
+    
+  "jspdf-autotable": "^5.0.2",
+  
+    
   "react": "^19.0.0",
   
     

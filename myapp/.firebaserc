@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "my-app-dev-99601",
+    "production": "my-app-prod-26eeb"
+  },
+  "targets": {},
+  "etags": {}
+}

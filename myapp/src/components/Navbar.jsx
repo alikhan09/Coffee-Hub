@@ -53,6 +53,12 @@ const Navbar = ({ setPage, setSelectedCategory }) => {
           </li>
           <li
             className="cursor-pointer hover:text-yellow-300 transition duration-300"
+            onClick={() => setPage("report")}
+          >
+            Report
+          </li>
+          <li
+            className="cursor-pointer hover:text-yellow-300 transition duration-300"
             onClick={() => setPage("contact")}
           >
             Contact Us

@@ -21,7 +21,7 @@ import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import front from "../assets/front.png";
 import header from "../assets/Header.png";
-import footer from "../assets/footer.png";
+import footer from "../assets/Footer.png";
 import { FaStar } from "react-icons/fa";
 import Speedometer from "./speedometer";
 

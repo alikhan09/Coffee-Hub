@@ -18,12 +18,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      # Install inside myapp folder
       - name: Install dependencies
+        working-directory: myapp
         run: npm install
 
+      # Build inside myapp folder
       - name: Build Vite app
+        working-directory: myapp
         run: npm run build
 
+      # Deploy DEV
       - name: Deploy to Dev
         if: github.event.inputs.environment == 'dev'
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -31,7 +36,9 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_DEV }}"
           projectId: my-app-dev-99601
+          entryPoint: myapp
 
+      # Deploy PROD
       - name: Deploy to Prod
         if: github.event.inputs.environment == 'prod'
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -39,3 +46,4 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_PROD }}"
           projectId: my-app-prod-26eeb
+          entryPoint: myapp
